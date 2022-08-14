@@ -1,0 +1,20 @@
+18:35:37 **** Incremental Build of configuration Debug for project 003TaskMonitor_test ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/STM32Workspace/RTOS_workspace/common/ThirdParty/FreeRTOS" -I"D:/STM32Workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/STM32Workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/STM32Workspace/RTOS_workspace/common/ThirdParty/SEGGER/Config" -I"D:/STM32Workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/STM32Workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -I../USB_HOST/App -I../USB_HOST/Target -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "003TaskMonitor_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32Workspace\RTOS_workspace\003TaskMonitor_test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="003TaskMonitor_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 003TaskMonitor_test.elf
+ 
+arm-none-eabi-size   003TaskMonitor_test.elf 
+arm-none-eabi-objdump -h -S  003TaskMonitor_test.elf  > "003TaskMonitor_test.list"
+arm-none-eabi-objcopy  -O binary  003TaskMonitor_test.elf  "003TaskMonitor_test.bin"
+   text	   data	    bss	    dec	    hex	filename
+  51336	    160	  82600	 134096	  20bd0	003TaskMonitor_test.elf
+Finished building: default.size.stdout
+ 
+Finished building: 003TaskMonitor_test.bin
+ 
+Finished building: 003TaskMonitor_test.list
+ 
+
+18:35:39 Build Finished. 0 errors, 0 warnings. (took 2s.286ms)
+

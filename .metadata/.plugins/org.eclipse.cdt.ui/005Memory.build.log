@@ -1,0 +1,10 @@
+17:25:07 **** Incremental Build of configuration Debug for project 005Memory ****
+make -j8 all 
+arm-none-eabi-size   005Memory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25652	    132	   7916	  33700	   83a4	005Memory.elf
+Finished building: default.size.stdout
+ 
+
+17:25:08 Build Finished. 0 errors, 0 warnings. (took 1s.129ms)
+

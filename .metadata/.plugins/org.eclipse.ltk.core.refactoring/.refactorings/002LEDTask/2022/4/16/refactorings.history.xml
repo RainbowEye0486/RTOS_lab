@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;ThirdParty&apos; to &apos;002LEDTask&apos;" description="Move &apos;ThirdParty&apos; to &apos;002LEDTask&apos;" destination="/002LEDTask" element1="/003 TaskMonitor_debug/ThirdParty" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1649840030647" updateReferences="true"/>
+</session>

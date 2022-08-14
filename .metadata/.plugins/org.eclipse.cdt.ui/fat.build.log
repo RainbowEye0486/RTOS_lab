@@ -1,0 +1,10 @@
+12:04:12 **** Incremental Build of configuration Debug for project fat ****
+make -j8 all 
+arm-none-eabi-size   fat.elf 
+   text	   data	    bss	    dec	    hex	filename
+  62068	    208	  86720	 148996	  24604	fat.elf
+Finished building: default.size.stdout
+ 
+
+12:04:12 Build Finished. 0 errors, 0 warnings. (took 772ms)
+
